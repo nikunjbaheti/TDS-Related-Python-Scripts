@@ -6,13 +6,6 @@ from docx.oxml.ns import qn
 from docx2pdf import convert
 import pandas as pd
 
-# Function to install required packages
-def install_packages():
-    subprocess.check_call(["pip", "install", "python-docx", "docx2pdf"])
-
-# Install packages
-install_packages()
-
 # Load the data
 data = pd.read_csv('data.csv')
 
